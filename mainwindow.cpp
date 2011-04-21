@@ -16,34 +16,32 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_treeWidget_customContextMenuRequested(QPoint pos)
 {
-    std::cout << "Context"<< std::endl;
     QTreeWidgetItem * item = NULL ;
     item = ui->treeWidget->itemAt(pos);
     QMenu menu(NULL);
     if ( item == NULL ) {
         // nothing selected
-        // add("Refresh All")
-        // add("Add Group...")
-        menu.addSeparator();
-        menu.exec(ui->treeWidget->mapToGlobal(pos));
+	menu.addAction("Refresh all");
+	menu.addAction("Add group...");
     } else {
         // something selected
-        // if (group) {
-        //  add("Rename...");
-        //  if (dynamic) {
-        //      add("Change URI...");
-        //      add("Refresh");
-        //  } else {
-        //  }
-        // } else if (feed) {
-        //  add("Refresh");
-        //  add("Download all items");
-        //  if(!parent.dynamic) {
-        //      add("Change URI...");
-        //  }
+        // if (item.isGroup()) {
+		menu.addAction("Rename");
+        //	if (item.isDynamicGroup()) {
+			menu.addAction("Change URI...");
+			menu.addAction("Refresh");
+        //	} else {
+        //	}
+        // } else if (item.isFeed()) {
+		menu.addAction("Refresh");
+		menu.addAction("Download all items");
+        //	if (!item.parent().isDynamicGroup()) {
+			menu.addAction("Change URI...");
+        //	}
         // } else { // it's an item
-        //  add("Download");
+		menu.addAction("Download");
         // }
     }
+    menu.exec(ui->treeWidget->mapToGlobal(pos));
     menu.clear();
 }
