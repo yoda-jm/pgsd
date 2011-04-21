@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>778</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Party Game Song Downloader (PGSD)</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="minimumSize">
+       <size>
+        <width>131</width>
+        <height>49</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Feeds</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QTreeWidget" name="treeWidget">
+          <column>
+           <property name="text">
+            <string>Feeds</string>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>Performous.org</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../usr/share/icons/gnome/32x32/places/folder.png</normaloff>../../../../../usr/share/icons/gnome/32x32/places/folder.png</iconset>
+           </property>
+           <item>
+            <property name="text">
+             <string>Joco</string>
+            </property>
+            <property name="toolTip">
+             <string>http://performous.org/dlc/joco.xml</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../usr/share/icons/gnome/32x32/mimetypes/gnome-mime-application-xhtml+xml.png</normaloff>../../../../../usr/share/icons/gnome/32x32/mimetypes/gnome-mime-application-xhtml+xml.png</iconset>
+            </property>
+            <item>
+             <property name="text">
+              <string>A Talk with George</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../../../../usr/share/icons/gnome/32x32/mimetypes/audio-x-generic.png</normaloff>../../../../../usr/share/icons/gnome/32x32/mimetypes/audio-x-generic.png</iconset>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Better</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Code Monkey</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>First of May</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Ikéa</string>
+             </property>
+            </item>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>SMO</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../usr/share/icons/gnome/32x32/places/folder.png</normaloff>../../../../../usr/share/icons/gnome/32x32/places/folder.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Personnal</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../../../../usr/share/icons/gnome/32x32/places/folder.png</normaloff>../../../../../usr/share/icons/gnome/32x32/places/folder.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Group example</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Feed 1 (xml file)</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Entry in the feed (DLC item)</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>Feed 2 (xml file)</string>
+            </property>
+           </item>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QListWidget" name="listWidget">
+            <item>
+             <property name="text">
+              <string>Here detail about the selected</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>- Group : maybe user comment...</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>- Feed : URI of the feed, other general stuff from xml ?</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>- Item : title/name/instruments/size/length/...</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>Download</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Downloads</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="tableWidget">
+          <row>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string>6</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>Name</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Percent</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>778</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuParty_Game_Song_Downloader">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_group"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd_category"/>
+   </widget>
+   <addaction name="menuParty_Game_Song_Downloader"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAdd_category">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionNew_group">
+   <property name="text">
+    <string>New group...</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
