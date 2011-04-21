@@ -33,6 +33,9 @@
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <widget class="QTreeWidget" name="treeWidget">
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
           <column>
            <property name="text">
             <string>Feeds</string>

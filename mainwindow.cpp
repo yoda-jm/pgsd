@@ -1,3 +1,4 @@
+#include <iostream>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -16,6 +17,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_treeWidget_customContextMenuRequested(QPoint pos)
 {
+    std::cout << "Context"<< std::endl;
     QTreeWidgetItem * item = NULL ;
     item = ui->treeWidget->itemAt(pos);
     QMenu menu(NULL);
